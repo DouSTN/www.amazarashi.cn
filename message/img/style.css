@@ -1,0 +1,567 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  /*background:transparent;*/
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  line-height: 1;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* clear */
+.clear,
+.clearfix {
+  zoom: 100%;
+}
+
+.clear:after,
+.clearfix:after {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+
+.t-ind {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.break {
+  word-wrap: break-word;
+}
+
+.bl {
+  display: block;
+}
+
+.fs {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'pkna';
+  font-family: "游明朝体", "Yu Mincho", YuMincho, 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho', serif;
+  color: #fff;
+  background: #2C3031;
+  height: 100%;
+  min-width: 1060px;
+}
+
+.gothic {
+  font-family: '游ゴシック体', '游ゴシック', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.mincho {
+  font-family: "游明朝体", "Yu Mincho", YuMincho, 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho', serif;
+}
+
+.f1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.f2 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+}
+
+body.fixed {
+  overflow: hidden;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  z-index: 0;
+  min-width: 1060px;
+}
+
+#bg div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-out;
+}
+
+#bg div.bg1 {
+  background: url(../img/bg1.png) no-repeat center #2C3031;
+  background-size: cover;
+}
+
+#bg div.bg2 {
+  background: url(../img/bg2.png) no-repeat center #2C3031;
+  background-size: cover;
+}
+
+#bg div.bg3 {
+  background: url(../img/bg3.png) no-repeat center #2C3031;
+  background-size: cover;
+}
+
+#bg div.hide {
+  -webkit-transform: scale(0, 0);
+      -ms-transform: scale(0, 0);
+          transform: scale(0, 0);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #bg div.bg1 {
+    background-image: url(../img/bg1@2x.png);
+  }
+  #bg div.bg2 {
+    background-image: url(../img/bg2@2x.png);
+  }
+  #bg div.bg3 {
+    background-image: url(../img/bg3@2x.png);
+  }
+}
+
+#opening {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: #2C3031;
+  overflow: hidden;
+}
+
+#opening svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -530px;
+}
+
+#opening svg path {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#top {
+  height: 100%;
+  background: url(../img/top-image.png) no-repeat center bottom fixed #2C3031;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+  min-height: 600px;
+}
+
+#top .sns {
+  padding: 15px 15px 0 0;
+  font-size: 0;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+#top .sns a {
+  display: inline-block;
+  transition: all .2s linear;
+}
+
+#top .sns a:hover {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#top .text1,
+#top .text2,
+#top .logo,
+#top .main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -59px 0 0 -177px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#top .main {
+  width: 753px;
+  height: 50px;
+  margin: -280px 0 0 -280px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#top .main .e {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#top .text2 {
+  margin: 65px 0 0 -263px;
+}
+
+#top .logo {
+  margin: 138px 0 0 -83px;
+}
+
+#sp-bg {
+  display: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #top {
+    background-image: url(../img/top-image@2x.png);
+  }
+}
+
+html.sp #top {
+  background: #2C3031;
+}
+
+html.sp #sp-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: url(../img/top-image.png) no-repeat center bottom #2C3031;
+  background-size: cover;
+  display: block;
+}
+
+#message {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7;
+  padding: 70px 0;
+  color: #C8DEEB;
+  border-top: solid 2px #000;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
+
+#message p {
+  color: #fff;
+  font-size: 12px;
+}
+
+#disc-info {
+  border-top: solid 2px #000;
+  position: relative;
+  z-index: 1;
+}
+
+#disc-info .wrap {
+  width: 960px;
+  border-left: solid 2px #000;
+  border-right: solid 2px #000;
+  font-size: 0;
+  letter-spacing: 0;
+  margin: 0 auto;
+}
+
+#disc-info .wrap .disc {
+  width: 320px;
+  padding: 70px 0 0;
+  height: 830px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#disc-info .wrap .disc.center {
+  border-left: solid 2px #000;
+  border-right: solid 2px #000;
+}
+
+#disc-info .wrap .disc .image {
+  height: 400px;
+}
+
+#disc-info .wrap .disc .image img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  border: solid 1px #B4B4B4;
+}
+
+#disc-info .wrap .disc .image .disc1 {
+  height: 100%;
+}
+
+#disc-info .wrap .disc .image .disc2 {
+  height: 250px;
+  position: relative;
+  top: 75px;
+}
+
+#disc-info .wrap .disc .image .disc3 {
+  height: 254px;
+  position: relative;
+  top: 73px;
+}
+
+#disc-info .wrap .disc .title {
+  padding-top: 18px;
+  height: 55px;
+  font-size: 22px;
+  color: #CD9C9F;
+}
+
+#disc-info .wrap .disc .title small {
+  display: block;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+#disc-info .wrap .disc .text {
+  font-size: 14px;
+  height: 90px;
+  line-height: 1.5;
+}
+
+#disc-info .wrap .disc .links {
+  text-align: left;
+  margin-left: 13px;
+}
+
+#disc-info .wrap .disc .links li {
+  display: inline-block;
+  margin: 10px 5px 0;
+  text-align: center;
+}
+
+#disc-info .wrap .disc .links li a {
+  display: block;
+  width: 134px;
+  height: 28px;
+  border: solid 1px #CD9C9F;
+  line-height: 28px;
+  color: #CD9C9F;
+  font-size: 14px;
+  letter-spacing: .1em;
+  transition: all .2s linear;
+}
+
+#disc-info .wrap .disc .links li a:hover {
+  color: #fff;
+  background: #CD9C9F;
+}
+
+#disc-info .wrap .disc .links li p {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+#songlist {
+  position: relative;
+  z-index: 1;
+}
+
+#songlist hr {
+  display: block;
+  height: 2px;
+  padding: 0;
+  margin: 0;
+  background: #000;
+  border: none;
+}
+
+#songlist .wrap {
+  width: 962px;
+  margin: 0 auto;
+  border-right: solid 2px #000;
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+#songlist .wrap .song {
+  width: 478px;
+  height: 520px;
+  border-left: solid 2px #000;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+#songlist .wrap .song div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+#songlist .wrap .song p {
+  font-size: 18px;
+  color: #C8DEEB;
+  margin-bottom: 1em;
+}
+
+#songlist .wrap .song p span {
+  font-size: 22px;
+}
+
+#songlist .wrap .song small {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 2em 0;
+}
+
+#songlist .wrap .song strong {
+  font-size: 18px;
+  margin: .7em 0;
+  display: block;
+  line-height: 1.3;
+}
+
+#songlist .wrap .song ul {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+footer {
+  border-top: solid 2px #000;
+  padding: 70px 0 10px;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+footer .copyright {
+  letter-spacing: .2em;
+}
